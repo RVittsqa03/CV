@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+<style>
+.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;}
+
+</style>
+ <nav class="navbar navbar-inverse">
+ <ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="projects.html">Projects</a></li>
+	<!-- Trigger the modal with a button -->
+	<li><button type="button" class="btn btn-info btn-sm" id="myBtn"><a href="#">Contact Form
+	</a></button></li>
+</ul>
+<ul class="breadcrumb">
+    <li class="active">Home</li>
+		<!--li><a href="#">Work</a></li>
+			<li><a href="#">Education</a></li>
+			<li><a href="#">Projects</a></li-->
+		<div class="alert alert-success alert-dismissable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> You have come to the right place. Please click on x to close this alert message.
+  </div>
+  <li class="active"><a href="checklist.html">Click here for CA2 checklist</a></li>
+	<form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+		<script>
+$(document).ready(function(){
+    $('.btn').tooltip({title: "Click me"}); 
+});
+</script>
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+	</ul>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+<div class="container-fluid" style="background-color:#2196F3;color:#fff;height:300px;">
+
+    <h2>Ramona Valentine</h2>
+    <img src="photoself.png" class="img-rounded" alt="Chania" width="160" height="145">
+    <h3>ITT Student</h3></div></div></nav>
+</div>
+
+<div class="container">
+<div class="row">
+
+	  <div class="col-sm-4">
+      <p><i>Click on image ...</i></p><a href="work.html"><img src="img_wp.jpg" class="img-circle" alt="Chania" width="260" height="145"></a>
+	    <div data-toggle="collapse" data-target="#demo">
+	
+		<h3><ul class="list-inline">
+		
+    <li><a data-toggle="tooltip" data-placement="top" title="Click here for Work page"></a></li>
+	<span class="glyphicon glyphicon-briefcase"></span>  <abbr title="Click here for brief summary">RECENT WORK</abbr></div></h3><br>
+      <div id="demo" class="collapse">
+	  <p>Last job as IT Support Engineer for work placement between Feb-Aug 2016, at Careworks in Sandyford.</p>
+      <p><i><a href="work.html">    See more ...</a></i></p><br>
+	  </div>
+       </div></a></li></ul>
+    <div class="col-sm-4">
+      <p><i>Click on image ...</i></p><a href="education.html"><img src="img_itt.jpg" class="img-circle" alt="Chania" width="260" height="145"></a>
+      <div data-toggle="collapse" data-target="#demo1">
+	  <h3><span class="glyphicon glyphicon-education"></span>  <abbr title="Click here for brief summary">EDUCATION</abbr></div></h3>
+	  <div id="demo1" class="collapse"><p>BSc.Hons. IT Management 2013-2016/7 Institute of Technology in Tallaght</p>
+      <p><i><a href="education.html">    See more ...</a></i></p>
+	  </div>     
+    </div>
+<div class="col-sm-4">
+  <p><i>Click on image ...</i></p><a href="projects.html"><img src="img_projects.jpg" class="img-circle" alt="Chania" width="260" height="145"></a>
+	<div data-toggle="collapse" data-target="#demo2">
+	  <h3><span class="glyphicon glyphicon-tasks"></span>   <abbr title="Click here for brief summary">PROJECTS</abbr></div></h3>
+		<div id="demo2" class="collapse"><p>Some recent and selected projects listed in here</p>
+			<p><i><a href="projects.html">    See more ... </a></i></p>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="icon-bar">
+		<a class="active" href="https://www.linkedin.com/in/ramona-valentine-53910579?trk=nav_responsive_tab_profile"><img src="linkedin.png" width="40px" height="40px"></a>
+		   <a href="https://www.meetup.com/members/143541992/"><img src="meetup.png" width="40px" height="40px"></a>
+		   <a href="https://www.facebook.com/ramona.valentine.58"><img src="facebook.png" width="40px" height="40px"></a>
+		   <a href="https://twitter.com/rosebud2471"><img src="twitter.png" width="40px" height="40px"></a>
+		   <a href="https://www.youtube.com/watch?v=GDQNC7PGGx8"><img src="youtube.png" width="40px" height="40px"></a>
+		   <a href="https://www.instagram.com/rosebud2471/"><img src="instagram.png" width="40px" height="40px"></a>
+	</div>
+		<i>Copyright &copy; Valentine 2016</i>  
+ </footer>
+	</div>
+	
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+	<!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Query request form</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+ <!--h2>Query request form</h2-->
+  <form>
+    <div class="form-group">
+	<div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	  <!--label for="fullName">Full Name:</label-->
+      <input type="fullName" class="form-control" id="fullName" placeholder="Type in your full name">
+    </div></div>
+    <div class="form-group">
+	<div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <!--label for="address">Address:</label-->
+      <input type="address" class="form-control" id="address" placeholder="Type in your full home address">
+    </div></div>
+	<div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div></form>
+    <!--button type="submit" class="btn btn-default">Submit</button-->
+    <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+  </form>
+  </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+	  </div>
+	  </div>
+<script>
+	$(document).ready(function(){
+		$("#myBtn").click(function(){
+			$("#myModal").modal();
+    });
+});
+</script>
+</body>
+</html>
+
